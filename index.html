@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>나의 포트폴리오</title>
+  <title>포트폴리오</title>
   <link rel="stylesheet" href="style.css">
   <style>
     body {
@@ -13,34 +13,46 @@
       line-height: 1.6;
       background-color: #f9f9f9;
       color: #333;
+      display: flex;
     }
-    header {
+    nav {
       background-color: #333;
       color: #fff;
-      padding: 1rem 2rem;
-    }
-    header h1 {
-      margin: 0;
+      min-width: 200px;
+      height: 100vh;
+      padding: 2rem 1rem;
+      position: fixed;
     }
     nav ul {
       list-style: none;
       padding: 0;
       margin: 0;
-      display: flex;
-      gap: 1rem;
+    }
+    nav li {
+      margin-bottom: 1rem;
     }
     nav a {
       color: #fff;
       text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      margin-left: 200px;
+      padding: 2rem;
+      flex: 1;
     }
     section {
-      padding: 2rem;
+      margin-bottom: 3rem;
       max-width: 800px;
-      margin: auto;
     }
     section h2 {
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.5rem;
+    }
+    .profile-photo {
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
     }
     footer {
       text-align: center;
@@ -48,51 +60,52 @@
       background-color: #eee;
       color: #666;
       font-size: 0.9rem;
+      margin-left: 200px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>나의 포트폴리오</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">자기소개</a></li>
-        <li><a href="#resume">이력서</a></li>
-        <li><a href="#projects">프로젝트</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>자기소개</h2>
-    <p><!-- 여기에 자기소개 내용을 입력하세요 --></p>
-  </section>
-
-  <section id="resume">
-    <h2>이력서</h2>
-    <p><a href="assets/resume.pdf" target="_blank">이력서 PDF 보기</a></p>
-    <div>
-      <!-- 여기에 이력서 내용을 입력하세요 (선택사항) -->
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>프로젝트</h2>
+  <nav>
     <ul>
-      <!-- 여기에 프로젝트 제목 및 설명을 추가하세요 -->
-      <li>
-        <h3>프로젝트 제목 1</h3>
-        <p>프로젝트 설명 1</p>
-      </li>
-      <li>
-        <h3>프로젝트 제목 2</h3>
-        <p>프로젝트 설명 2</p>
-      </li>
+      <li><a href="#about">Kwon Ohchul</a></li>
+      <li><a href="#resume">CV</a></li>
+      <li><a href="#projects">Projects</a></li>
     </ul>
-  </section>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>Kwon Ohchul</h2>
+      <img src="assets/profile.jpg" alt="내 사진" class="profile-photo">
+      <p><!-- 여기에 자기소개 내용을 입력하세요 --></p>
+    </section>
+
+    <section id="resume">
+      <h2>CV</h2>
+      <p><a href="assets/resume.pdf" target="_blank">이력서 PDF 보기</a></p>
+      <div>
+        <!-- 여기에 이력서 내용을 입력하세요 (선택사항) -->
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <!-- 여기에 프로젝트 제목 및 설명을 추가하세요 -->
+        <li>
+          <h3>프로젝트 제목 1</h3>
+          <p>프로젝트 설명 1</p>
+        </li>
+        <li>
+          <h3>프로젝트 제목 2</h3>
+          <p>프로젝트 설명 2</p>
+        </li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 나의 이름. 모든 권리 보유.</p>
+    <p>© 2025 Kwon Ohchul. All rights reserved.</p>
   </footer>
 </body>
 </html>
