@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwon Ohchul</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Merriweather', serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -67,6 +69,12 @@
       min-width: 200px;
       margin-right: 1rem;
     }
+    ul {
+      padding-left: 1rem;
+    }
+    li {
+      margin-bottom: 1.5rem;
+    }
     footer {
       text-align: center;
       padding: 1rem;
@@ -82,7 +90,7 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#resume">CV</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#activities">Activities</a></li>
       </ul>
     </nav>
   </header>
@@ -93,10 +101,9 @@
       <div class="about-container">
         <div class="about-text">
           <p>Seoul National University, Industrial Engineering, Junior</p>
-          <p>dootheg0924@snu.ac.kr </p>
-          <p> </p>
-          <p>Interests : Human-AI interaction, Artificial Intelligence, Ergonomics </p>
-          <p>Hobbies : Reading, Fitness, Traveling </p>
+          <p>Email: <a href="mailto:dootheg0924@snu.ac.kr">dootheg0924@snu.ac.kr</a></p>
+          <p>Interests: Human-AI Interaction, Artificial Intelligence, Ergonomics</p>
+          <p>Hobbies: Reading, Fitness, Traveling</p>
         </div>
         <img src="assets/profile.jpg" alt="Kwon Ohchul" class="profile-photo">
       </div>
@@ -106,26 +113,33 @@
       <h2>CV</h2>
       <p><a href="assets/resume_eng.pdf" target="_blank">View English CV</a></p>
       <p><a href="assets/resume_kor.pdf" target="_blank">View Korean CV</a></p>
-      <div>
-        <!-- Enter CV details here (optional) -->
-      </div>
     </section>
 
-    <section id="Extra-curricular Activities">
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>Undergraduate Research Inturn</h3>
+          <p><strong>May 2025 – Present</strong></p>
+          <p>Human-Centered Artificial Intelligence Lab, Seoul National University</p>
+          <p>Supervisor: Prof. Hyunggu Jung</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="activities">
       <h2>Extra-curricular Activities</h2>
       <ul>
-        <!-- Add project titles and descriptions here -->
         <li>
           <h3>Thinking Stone's Society</h3>
-          <p>March 2025 - Present</p>
-          <p>University joint club - Reading, Debate, and Group discussion</p>
-          <a href="http://webtss.com/tss/" target="_blank">Visit TSS website</a>
+          <p><strong>March 2025 – Present</strong></p>
+          <p>University joint club focused on reading, debate, and group discussion.</p>
+          <p><a href="http://webtss.com/tss/" target="_blank">Visit TSS Website</a></p>
         </li>
         <li>
           <h3>International Quant Championship 2025</h3>
-          <p>March 2025 - Present</p>
-          <p>Stage 1 accepted, Stage 2 in progress...</p>
-          <p>Semi-Cunsultant of WorldQuant</p>
+          <p><strong>March 2025 – Present</strong></p>
+          <p>Stage 1 accepted, Stage 2 in progress.<br>Participating as a semi-consultant for WorldQuant.</p>
         </li>
       </ul>
     </section>
